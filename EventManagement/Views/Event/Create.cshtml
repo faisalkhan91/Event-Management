@@ -1,0 +1,76 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model EventManagement.Models.Event;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Create New Event";
+}
+
+<form asp-controller="Event" asp-action="Create" method="post" class="mt-3">
+    <div>
+        <div class="form-group row">
+            <label asp-for="Title" class="col-sm-2 col-form-label"></label>
+            <div class=" col-sm-10">
+                <input type="text" asp-for="Title" class=" form-control" placeholder="Event title" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="StartDate" class="col-sm-2 col-form-label"></label>
+            <div class=" col-sm-10">
+                <input type="datetime" asp-for="StartDate" class=" form-control" placeholder="Event start date" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="EndDate" class="col-sm-2 col-form-label"></label>
+            <div class=" col-sm-10">
+                <input type="datetime" asp-for="EndDate" class=" form-control" placeholder="Event end date">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Duration" class="col-sm-2 col-form-label"></label>
+            <div class=" col-sm-10">
+                <input type="number" asp-for="Duration" class=" form-control" placeholder="Event duration">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Description" class="col-sm-2 col-form-label"></label>
+            <div class=" col-sm-10">
+                <input type="text" asp-for="Description" class=" form-control" placeholder="Event description">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Location" class="col-sm-2 col-form-label"></label>
+            <div class=" col-sm-10">
+                <input type="text" asp-for="Location" class=" form-control" placeholder="Event location">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="EventType" class="col-sm-2 col-form-label"></label>
+            <div class=" col-sm-auto">
+                Public<input type="radio" asp-for="EventType" name="Type" value="Public" class=" form-control" placeholder="Event type">
+                Private<input type="radio" asp-for="EventType" name="Type" value="Private" class=" form-control" placeholder="Event type">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Author" class="col-sm-2 col-form-label"></label>
+            <div class=" col-sm-10">
+                <input type="text" asp-for="Author" class=" form-control" placeholder="Event author">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+</form>
