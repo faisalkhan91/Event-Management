@@ -6,22 +6,36 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using EventManagement.Models;
+using EventManagement.ModelsLogic;
 
 namespace EventManagement.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        IEvent _ievent;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IEvent _event)
         {
             _logger = logger;
+            _ievent = _event;
         }
 
         public IActionResult Index()
         {
+            IEnumerable<Event> model = _ievent.GetAllEvents();
+            ViewBag.PageTitle = "Event Details from View Bag";
+            ViewBag.Event = model;
+
+            return View(model);
+        }
+
+        /*
+        public IActionResult Index()
+        {
             return View();
         }
+        */
 
         public IActionResult Privacy()
         {

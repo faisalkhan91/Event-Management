@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EventManagement.ModelsLogic
 {
-    interface IEvent
+    public interface IEvent
     {
         Event Add(Event _event);
         Event Update(Event eventChanges);
