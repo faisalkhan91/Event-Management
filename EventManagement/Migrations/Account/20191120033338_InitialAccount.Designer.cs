@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventManagement.Migrations.Account
 {
     [DbContext(typeof(AccountContext))]
-    [Migration("20191119201917_InitialAccount")]
+    [Migration("20191120033338_InitialAccount")]
     partial class InitialAccount
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
