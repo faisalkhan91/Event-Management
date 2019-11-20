@@ -28,6 +28,7 @@ namespace EventManagement
         {
             services.AddControllersWithViews();
             services.AddScoped<IEvent, EventRepository>();
+            services.AddScoped<IComment, CommentRepository>();
 
             //
             services.AddDbContextPool<AccountContext>(
