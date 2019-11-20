@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\faisa\\Desktop\\EventManagement\\EventManagement\\EventManagement.csproj": {}
+    "C:\\Users\\hackathon\\Desktop\\DotNet\\EventManagement\\EventManagement\\EventManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\faisa\\Desktop\\EventManagement\\EventManagement\\EventManagement.csproj": {
+    "C:\\Users\\hackathon\\Desktop\\DotNet\\EventManagement\\EventManagement\\EventManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\faisa\\Desktop\\EventManagement\\EventManagement\\EventManagement.csproj",
+        "projectUniqueName": "C:\\Users\\hackathon\\Desktop\\DotNet\\EventManagement\\EventManagement\\EventManagement.csproj",
         "projectName": "EventManagement",
-        "projectPath": "C:\\Users\\faisa\\Desktop\\EventManagement\\EventManagement\\EventManagement.csproj",
-        "packagesPath": "C:\\Users\\faisa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\faisa\\Desktop\\EventManagement\\EventManagement\\obj\\",
+        "projectPath": "C:\\Users\\hackathon\\Desktop\\DotNet\\EventManagement\\EventManagement\\EventManagement.csproj",
+        "packagesPath": "C:\\Users\\hackathon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hackathon\\Desktop\\DotNet\\EventManagement\\EventManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\faisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hackathon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

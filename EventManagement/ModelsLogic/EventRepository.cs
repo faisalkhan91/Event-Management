@@ -48,7 +48,8 @@ namespace EventManagement.ModelsLogic
 
         public IEnumerable<Event> GetAllEvents()
         {
-            return context.Events;
+            var x = context.Events;
+            return x;
         }
     }
 }

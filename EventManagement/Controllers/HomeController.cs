@@ -21,13 +21,13 @@ namespace EventManagement.Controllers
             _ievent = _event;
         }
 
-        public IActionResult Index()
+        public ViewResult Index()
         {
             IEnumerable<Event> model = _ievent.GetAllEvents();
             ViewBag.PageTitle = "Event Details from View Bag";
             ViewBag.Event = model;
 
-            return View(model);
+            return View();
         }
 
         /*
